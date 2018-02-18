@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.mainactivity.TakeAway">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70sp"
+        android:text="Keterangan Pemesan"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31sp"
+        android:ems="10"
+        android:hint="Nama"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editPonsel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editNama"
+        android:layout_alignStart="@+id/editNama"
+        android:layout_below="@+id/editNama"
+        android:layout_marginTop="25sp"
+        android:ems="10"
+        android:hint="Ponsel"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editPonsel"
+        android:layout_alignStart="@+id/editPonsel"
+        android:layout_below="@+id/editPonsel"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="Alamat"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editCatatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editAlamat"
+        android:layout_alignStart="@+id/editAlamat"
+        android:layout_below="@+id/editAlamat"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Catatan"
+        android:inputType="textPersonName" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editCatatan"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="31dp"
+        android:onClick="onClickOrder"
+        android:text="PILIH PESANAN"
+         />
+</RelativeLayout>
